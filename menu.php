@@ -36,7 +36,7 @@ echo '
         'megamenu'   = Megamenu (Common for e-commerce and large-scale websites)
         */
 
-        echo '<ul id="respMenu" class="Resp_Menu" data-menu-style="horizontal">';
+        echo '<ul id="respMenu" class="Versatile_Resp_Menu" data-menu-style="horizontal">';
 
         /*
         
@@ -67,7 +67,7 @@ echo '
 
         /*
         $menu_options = get_field('menu_options', 'option');
-        echo '<ul id="respMenu" class="Resp_Menu" data-menu-style="';
+        echo '<ul id="respMenu" class="Versatile_Resp_Menu" data-menu-style="';
 
                 $menu_type = [        
                 'horizontal',

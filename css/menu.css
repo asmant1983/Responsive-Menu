@@ -51,12 +51,12 @@ body {
     display: none;
 }
 
-.Resp_Menu {
+.Versatile_Resp_Menu {
     flex-wrap: wrap;
     display: flex;
 }
 
-.Resp_Menu a {
+.Versatile_Resp_Menu a {
     padding: 12px 8px;
     display: flex;
     font-size: 16px;
@@ -66,21 +66,21 @@ body {
     margin:0px 3px 3px 0px;
 }
 
-.Resp_Menu a,
-.Resp_Menu .submenu * {
+.Versatile_Resp_Menu a,
+.Versatile_Resp_Menu .submenu * {
     color: var(--color-text-light);
 }
 
-.Resp_Menu li {
+.Versatile_Resp_Menu li {
     position: relative;
 }
 
-.Resp_Menu .sub-menu,
-.Resp_Menu .sub-menu .arrow {
+.Versatile_Resp_Menu .sub-menu,
+.Versatile_Resp_Menu .sub-menu .arrow {
      position: absolute;
 }
 
-.Resp_Menu .arrow {
+.Versatile_Resp_Menu .arrow {
     border-style: var(--border-style-default);
     border-color: transparent;
     border-width: 8px 4px 0 4px;
@@ -89,17 +89,17 @@ body {
     border-top-color: var(--color-background-light);
 }
 
-.Resp_Menu .sub-menu,
-.Resp_Menu .sub-menu .sub-menu {
+.Versatile_Resp_Menu .sub-menu,
+.Versatile_Resp_Menu .sub-menu .sub-menu {
      display: none;
 }
 
-.Resp_Menu .sub-menu .sub-menu {
+.Versatile_Resp_Menu .sub-menu .sub-menu {
     left: 98%;
     top:0px;
 }
 
-.Resp_Menu .sub-menu {
+.Versatile_Resp_Menu .sub-menu {
     z-index: 100;
     margin-top: -4px;
     font-size: 15px;
@@ -107,14 +107,14 @@ body {
     padding: 4px 4px 2px 4px;
 }
 
-.Resp_Menu .sub-menu .arrow {
+.Versatile_Resp_Menu .sub-menu .arrow {
     right:5px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 8px solid var(--color-background-light);
 }
 
-.Resp_Menu li .sub-menu li a {
+.Versatile_Resp_Menu li .sub-menu li a {
     font-size: 15px;
     min-width: 190px;
     max-width:240px;
@@ -123,24 +123,24 @@ body {
     padding:10px 5px 10px 5px;
 }
 
-.Resp_Menu ul a:before {
+.Versatile_Resp_Menu ul a:before {
     padding-inline:0px 6px;
 }
 
-.Resp_Menu ul ul a:before {
+.Versatile_Resp_Menu ul ul a:before {
     padding-inline:0px 4px;
     content: var(--list_item_1);
 }
 
-.Resp_Menu ul a:before {
+.Versatile_Resp_Menu ul a:before {
     content: var(--list_item_2);
     font-size:8px;
 }
 
-.Resp_Menu a:hover,
-.Resp_Menu a:focus,
-.Resp_Menu ul li a:hover,
-.Resp_Menu li ul li a:focus   {
+.Versatile_Resp_Menu a:hover,
+.Versatile_Resp_Menu a:focus,
+.Versatile_Resp_Menu ul li a:hover,
+.Versatile_Resp_Menu li ul li a:focus   {
     background-color: var(--color-background-light);
     color:var(--color-text-dark)
 }
@@ -308,11 +308,11 @@ ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
 
 @media screen and (max-width:1279.5px) {
 
-    .Resp_Menu li a {
+    .Versatile_Resp_Menu li a {
         font-size:15px;
     }
 
-    .Resp_Menu li .sub-menu li a{
+    .Versatile_Resp_Menu li .sub-menu li a{
         font-size:14px;
     }
 
@@ -417,7 +417,7 @@ ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
     /* Hamburger icon transforming into cross by touching. Uncomment CSS to activate it.*/
 
     
-        .menu-toggle-btn.open span:nth-child(1) {
+        /* .menu-toggle-btn.open span:nth-child(1) {
             width: 0%;
             left: 50%;
             transition: 0s ease-in-out;
@@ -437,39 +437,39 @@ ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
             transform: rotate(-45deg);
             margin-top: -12px;
         }
-   
+    */
 
     /* -- MOBILE MENU -- */
 
-    .Resp_Menu {
+    .Versatile_Resp_Menu {
         background-color: var(--color-background-primary);
         display: none;
     }
 
-    .Resp_Menu li a {
+    .Versatile_Resp_Menu li a {
         padding: 10px 8px;
         font-size: 18px;
         border-top:2px var(--border-color-light) var(--border-style-default);
         margin:0;
     }
 
-    .Resp_Menu li:last-child {
+    .Versatile_Resp_Menu li:last-child {
         border-width: 0;
     }
 
-    .Resp_Menu .sub-menu {
+    .Versatile_Resp_Menu .sub-menu {
         position: static;
         padding:0;
     }
 
-    .Resp_Menu > li > .sub-menu {
+    .Versatile_Resp_Menu > li > .sub-menu {
         padding: 0px;
         background-color: var(--color-background-light);
         flex-direction: column;
         margin-top:0;
     }
 
-    .Resp_Menu li .sub-menu li a {
+    .Versatile_Resp_Menu li .sub-menu li a {
      
         padding: 10px 35px 10px 12px;
         background-color: var(--color-background-primary-dark);
@@ -478,54 +478,54 @@ ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
         margin:0;
     }
 
-    .Resp_Menu .sub-menu li:last-child {
+    .Versatile_Resp_Menu .sub-menu li:last-child {
         border: 0;
     }
 
-    .Resp_Menu ul a:before {
+    .Versatile_Resp_Menu ul a:before {
         padding-right:8px;
     }
 
 
-    .Resp_Menu ul ul a:before {
+    .Versatile_Resp_Menu ul ul a:before {
         border:0;
         padding-right:15px;
         content:var(--list_item_1);
         top:2px;
     }
 
-    .Resp_Menu > li > .sub-menu > li .sub-menu {
+    .Versatile_Resp_Menu > li > .sub-menu > li .sub-menu {
         position: relative;
         left:0;
         top:0;
         margin-top:0px;
     }
 
-    .Resp_Menu li .sub-menu li .sub-menu li a {
+    .Versatile_Resp_Menu li .sub-menu li .sub-menu li a {
         padding-left:17px;
         font-size:14px;
         background-color: var(--color-background-accent);
     }
 
-    .Resp_Menu li .sub-menu li a:hover,
-    .Resp_Menu li .sub-menu li a:focus 
-    .Resp_Menu li .sub-menu li .sub-menu li a:hover,
-    .Resp_Menu li .sub-menu li .sub-menu li a:focus  {
+    .Versatile_Resp_Menu li .sub-menu li a:hover,
+    .Versatile_Resp_Menu li .sub-menu li a:focus 
+    .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:hover,
+    .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:focus  {
         background-color: var(--color-background-light);
         color:var(--color-text-dark)
      }
 
   /* Pijltjes */
   
-    .Resp_Menu > li a > .arrow,
-    .Resp_Menu .sub-menu li > a > .arrow {
+    .Versatile_Resp_Menu > li a > .arrow,
+    .Versatile_Resp_Menu .sub-menu li > a > .arrow {
         border-top: 10px solid var(--border-color-light);
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
         position: absolute;
     }
 
-    .Resp_Menu .sub-menu li > a > .arrow {
+    .Versatile_Resp_Menu .sub-menu li > a > .arrow {
         right:15px;
     }
 
