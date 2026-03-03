@@ -231,7 +231,7 @@ ul[data-menu-style="vertical"] > li > a > .arrow {
 ul[data-menu-style="vertical"] .sub-menu a {
     padding: 10px 6px;
     text-decoration: none;
-    background-color: var(--color-background-white);
+    background-color: var(--color-background-light);
 }
 
 
@@ -252,11 +252,11 @@ ul[data-menu-style="vertical"] .sub-menu .sub-menu li {
 ==============================================
 */
 
-ul[data-menu-style=megamenu] li {
+ul[data-menu-style="megamenu"] li {
     position: static;
 }
 
-ul[data-menu-style=megamenu] li .sub-menu {
+ul[data-menu-style="megamenu"] li .sub-menu {
     flex-wrap: wrap;
     left: 0;
     display: none;
@@ -264,44 +264,44 @@ ul[data-menu-style=megamenu] li .sub-menu {
     padding: 10px 10px 40px 10px;
 }
 
-ul[data-menu-style=megamenu] li .sub-menu li {
+ul[data-menu-style="megamenu"] li .sub-menu li {
     min-width:200px;
     max-width:245px;
     margin:0px 3px 3px 3px
 }
 
-ul[data-menu-style=megamenu] li .sub-menu li a {
+ul[data-menu-style="megamenu"] li .sub-menu li a {
     padding:10px;
 }
 
-ul[data-menu-style=megamenu] li .sub-menu li a:before {
+ul[data-menu-style="megamenu"] li .sub-menu li a:before {
     content:' ';
 }
 
-ul[data-menu-style=megamenu] .sub-menu li>a>.arrow {
+ul[data-menu-style="megamenu"] .sub-menu li>a>.arrow {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 8px solid var(--border-color-light);    
 }
 
-ul[data-menu-style=megamenu] li .sub-menu li .sub-menu {
+ul[data-menu-style="megamenu"] li .sub-menu li .sub-menu {
     position: static;
     display:flex;
     padding:1px 0px 4px 0px;
 }   
 
-ul[data-menu-style=megamenu] li .sub-menu li .sub-menu li {
+ul[data-menu-style="megamenu"] li .sub-menu li .sub-menu li {
     list-style-type: none;
     width:100%;
     margin:0;
 }
 
-ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a {
+ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a {
     text-align: left;
     margin:2px 0px 0px 0px;
 }
 
-ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
+ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
     padding-right:6px;
     content: var(--list_item_1);
 }
@@ -332,11 +332,11 @@ ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
     ul[data-menu-style=accordion]>li>.sub-menu>li .sub-menu a {
         min-width: 140px;
     }
-    ul[data-menu-style=megamenu] li .sub-menu {
+    ul[data-menu-style="megamenu"] li .sub-menu {
         padding:18px 12px;
     }
 
-    ul[data-menu-style=megamenu] li .sub-menu li {
+    ul[data-menu-style="megamenu"] li .sub-menu li {
         width:23.5%;
         min-width:190px;
         margin: 0px 2px 4px 2px;
@@ -508,7 +508,7 @@ ul[data-menu-style=megamenu] li>.sub-menu>li .sub-menu li a:before {
     }
 
     .Versatile_Resp_Menu li .sub-menu li a:hover,
-    .Versatile_Resp_Menu li .sub-menu li a:focus 
+    .Versatile_Resp_Menu li .sub-menu li a:focus,
     .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:hover,
     .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:focus  {
         background-color: var(--color-background-light);

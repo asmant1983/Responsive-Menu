@@ -4,7 +4,7 @@
 
 echo '
 
-<nav class="nav1">
+<nav class="nav1" aria-label="Main navigation">
         <div class="navbar">   
 
         <section class="menu-toggle">
@@ -74,15 +74,16 @@ echo '
                 'megamenu',
                 ];
 
-        foreach ($menu_type as $style) {
-                if ($menu_options === $style) {
-                echo $style;
+        foreach ($menu_type as $menu) {
+                    if ($menu_options === $menu) {
+                    echo esc_attr($menu);
+                    }
                 }
-        }
 
-        echo '">';
+                $menu = in_array($menu_options, $menu_type) ? $menu_options : 'horizontal';
         */
-
+                
+        echo '">';        
         wp_nav_menu(
                 array(
                 'theme_location' => 'my-custom-menu',
