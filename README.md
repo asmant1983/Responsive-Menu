@@ -32,12 +32,13 @@ Four Unique Menu Types: Switch instantly between the following styles via the da
 
 <li>megamenu: A wide, multi-column megamenu (essential for e-commerce and large-scale platforms).</li>
 </ul>
-<strong>100% Responsive:</strong> The menu scales smoothly from a wide desktop layout to an intuitive hamburger menu (.menu-toggle-btn) for mobile users.
 
-<strong>Seamless WordPress Integration:</strong>  Ready to use in any custom WordPress theme thanks to the optimized PHP templates.
+<p><strong>100% Responsive:</strong> The menu scales smoothly from a wide desktop layout to an intuitive hamburger menu (.menu-toggle-btn) for mobile users.</p>
 
-<strong>Dynamic Management (ACF Ready):</strong>  Link the menu to a 'Select' field in ACF, allowing administrators to visually manage the layout directly from the backend.
+<p><strong>Seamless WordPress Integration:</strong>  Ready to use in any custom WordPress theme thanks to the optimized PHP templates.</p>
 
-<strong>Multi-level Support:</strong>  Developed and tested for deep tree structures up to three levels (one main level and two sub-levels), compliant with current UI/UX standards.
+<p><strong>Dynamic Management (ACF Ready):</strong>  Link the menu to a 'Select' field in ACF, allowing administrators to visually manage the layout directly from the backend.</p>
 
-<strong>Absolute Developer Freedom:</strong>  The HTML output contains no unnecessary classes or inline styles. This grants you complete control over the CSS styling and makes it incredibly easy to add custom JavaScript animations or ARIA accessibility attributes.
+<p><strong>Multi-level Support:</strong>  Developed and tested for deep tree structures up to three levels (one main level and two sub-levels), compliant with current UI/UX standards.</p>
+
+<p><strong>Absolute Developer Freedom:</strong>  The HTML output contains no unnecessary classes or inline styles. This grants you complete control over the CSS styling and makes it incredibly easy to add custom JavaScript animations or ARIA accessibility attributes.</p>
