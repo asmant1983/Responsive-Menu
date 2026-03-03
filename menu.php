@@ -2,6 +2,8 @@
 
 /* Wordpress template integration */
 
+/* Wordpress template integration */
+
 echo '
 
 <nav class="nav1">
