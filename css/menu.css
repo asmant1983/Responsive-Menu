@@ -11,7 +11,7 @@
     --color-text-dark: #0D0D0D;
     --color-text-muted: #4169e1;
 
-    /* Borders colors */
+    /* Border colors */
     --border-color-primary: #1b2f6b;
     --border-color-dark: #1d2327;
     --border-color-light: #f0f8ff;
@@ -27,8 +27,8 @@
 }
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
@@ -44,10 +44,10 @@ body {
     display: flex;
     background: var(--color-background-grey);
     width: fit-content;
-    padding:5px;
+    padding: 5px;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
 
@@ -61,9 +61,9 @@ body {
     display: flex;
     font-size: 16px;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: var(--color-background-primary);
-    margin:0px 3px 3px 0px;
+    margin: 0px 3px 3px 0px;
 }
 
 .Versatile_Resp_Menu a,
@@ -85,7 +85,7 @@ body {
     border-color: transparent;
     border-width: 8px 4px 0 4px;
     margin: 4px 0 0 8px;
-    right:5px;
+    right: 5px;
     border-top-color: var(--color-background-light);
 }
 
@@ -96,7 +96,7 @@ body {
 
 .Versatile_Resp_Menu .sub-menu .sub-menu {
     left: 98%;
-    top:0px;
+    top: 0px;
 }
 
 .Versatile_Resp_Menu .sub-menu {
@@ -108,7 +108,7 @@ body {
 }
 
 .Versatile_Resp_Menu .sub-menu .arrow {
-    right:5px;
+    right: 5px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     border-left: 8px solid var(--color-background-light);
@@ -117,32 +117,32 @@ body {
 .Versatile_Resp_Menu li .sub-menu li a {
     font-size: 15px;
     min-width: 190px;
-    max-width:240px;
+    max-width: 240px;
     background-color: var(--color-background-primary);
-    margin:0px 0px 3px 0px;
-    padding:10px 5px 10px 5px;
+    margin: 0px 0px 3px 0px;
+    padding: 10px 5px 10px 5px;
 }
 
 .Versatile_Resp_Menu ul a:before {
-    padding-inline:0px 6px;
+    padding-inline: 0px 6px;
 }
 
 .Versatile_Resp_Menu ul ul a:before {
-    padding-inline:0px 4px;
+    padding-inline: 0px 4px;
     content: var(--list_item_1);
 }
 
 .Versatile_Resp_Menu ul a:before {
     content: var(--list_item_2);
-    font-size:8px;
+    font-size: 8px;
 }
 
 .Versatile_Resp_Menu a:hover,
 .Versatile_Resp_Menu a:focus,
 .Versatile_Resp_Menu ul li a:hover,
-.Versatile_Resp_Menu li ul li a:focus   {
+.Versatile_Resp_Menu li ul li a:focus {
     background-color: var(--color-background-light);
-    color:var(--color-text-dark)
+    color: var(--color-text-dark);
 }
 
 ul[data-menu-style="vertical"],
@@ -160,14 +160,14 @@ ul[data-menu-style="accordion"] a {
 
 ul[data-menu-style="vertical"] li,
 ul[data-menu-style="accordion"] li {
-    margin-top:1px;
+    margin-top: 1px;
 }
 
 ul[data-menu-style="vertical"] > li > .sub-menu a,
 ul[data-menu-style="accordion"] > li > .sub-menu a {
     font-size: 14px;
-    min-width:unset;
-    max-width:unset;
+    min-width: unset;
+    max-width: unset;
 }
 
 ul[data-menu-style="vertical"] > li > a > .arrow, 
@@ -195,19 +195,19 @@ ul[data-menu-style="accordion"] li .sub-menu li > a > .arrow {
 ul[data-menu-style="accordion"] .sub-menu,
 ul[data-menu-style="accordion"] .sub-menu > li .sub-menu {
     position: static;
-    margin-top:0px;
-    padding:0px;
+    margin-top: 0px;
+    padding: 0px;
     background-color: var(--color-background-grey);
 }
 
 ul[data-menu-style="accordion"] .sub-menu li a {
-    padding-left:10px;
+    padding-left: 10px;
     background-color: var(--color-background-primary-dark);
-    margin:0px;
+    margin: 0px;
 }
 
 ul[data-menu-style="accordion"] .sub-menu li .sub-menu li a {
-    padding-left:15px;
+    padding-left: 15px;
     background-color: var(--color-background-accent);
 }
 
@@ -234,7 +234,6 @@ ul[data-menu-style="vertical"] .sub-menu a {
     background-color: var(--color-background-light);
 }
 
-
 ul[data-menu-style="vertical"] li .sub-menu,
 ul[data-menu-style="vertical"] li .sub-menu li .sub-menu {
     display: none;
@@ -260,25 +259,25 @@ ul[data-menu-style="megamenu"] li .sub-menu {
     flex-wrap: wrap;
     left: 0;
     display: none;
-    width:100%;
+    width: 100%;
     padding: 10px 10px 40px 10px;
 }
 
 ul[data-menu-style="megamenu"] li .sub-menu li {
-    min-width:200px;
-    max-width:245px;
-    margin:0px 3px 3px 3px
+    min-width: 200px;
+    max-width: 245px;
+    margin: 0px 3px 3px 3px;
 }
 
 ul[data-menu-style="megamenu"] li .sub-menu li a {
-    padding:10px;
+    padding: 10px;
 }
 
 ul[data-menu-style="megamenu"] li .sub-menu li a:before {
-    content:' ';
+    content: ' ';
 }
 
-ul[data-menu-style="megamenu"] .sub-menu li>a>.arrow {
+ul[data-menu-style="megamenu"] .sub-menu li > a > .arrow {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 8px solid var(--border-color-light);    
@@ -286,34 +285,34 @@ ul[data-menu-style="megamenu"] .sub-menu li>a>.arrow {
 
 ul[data-menu-style="megamenu"] li .sub-menu li .sub-menu {
     position: static;
-    display:flex;
-    padding:1px 0px 4px 0px;
+    display: flex;
+    padding: 1px 0px 4px 0px;
 }   
 
 ul[data-menu-style="megamenu"] li .sub-menu li .sub-menu li {
     list-style-type: none;
-    width:100%;
-    margin:0;
+    width: 100%;
+    margin: 0;
 }
 
-ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a {
+ul[data-menu-style="megamenu"] li > .sub-menu > li .sub-menu li a {
     text-align: left;
-    margin:2px 0px 0px 0px;
+    margin: 2px 0px 0px 0px;
 }
 
-ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
-    padding-right:6px;
+ul[data-menu-style="megamenu"] li > .sub-menu > li .sub-menu li a:before {
+    padding-right: 6px;
     content: var(--list_item_1);
 }
 
-@media screen and (max-width:1279.5px) {
+@media screen and (max-width: 1279.5px) {
 
     .Versatile_Resp_Menu li a {
-        font-size:15px;
+        font-size: 15px;
     }
 
     .Versatile_Resp_Menu li .sub-menu li a{
-        font-size:14px;
+        font-size: 14px;
     }
 
     ul[data-menu-style="accordion"] .sub-menu .sub-menu li {
@@ -326,24 +325,25 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
         padding: 2px;
     }
 
-    ul[data-menu-style=vertical]>li>.sub-menu a,
-    ul[data-menu-style=vertical]>li>.sub-menu>li .sub-menu a,
-    ul[data-menu-style=accordion]>li>.sub-menu a,
-    ul[data-menu-style=accordion]>li>.sub-menu>li .sub-menu a {
+    ul[data-menu-style="vertical"] > li > .sub-menu a,
+    ul[data-menu-style="vertical"] > li > .sub-menu > li .sub-menu a,
+    ul[data-menu-style="accordion"] > li > .sub-menu a,
+    ul[data-menu-style="accordion"] > li > .sub-menu > li .sub-menu a {
         min-width: 140px;
     }
+    
     ul[data-menu-style="megamenu"] li .sub-menu {
-        padding:18px 12px;
+        padding: 18px 12px;
     }
 
     ul[data-menu-style="megamenu"] li .sub-menu li {
-        width:23.5%;
-        min-width:190px;
+        width: 23.5%;
+        min-width: 190px;
         margin: 0px 2px 4px 2px;
      }
 
-     ul[data-menu-style=accordion]>li>.sub-menu>li .sub-menu a {
-        font-size:13px;
+     ul[data-menu-style="accordion"] > li > .sub-menu > li .sub-menu a {
+        font-size: 13px;
      }
 }
 
@@ -351,9 +351,9 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
 
     .nav1 {
         flex-direction: column;
-        width:100%;
+        width: 100%;
         background-color: var(--color-background-primary);
-        padding:0;
+        padding: 0;
     }
 
     .nav_background {
@@ -369,13 +369,13 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
     }
 
     .navbar {
-           justify-content: flex-end;
+        justify-content: flex-end;
     }
 
     .menu-toggle {
         background: var(--color-background-primary);
         flex-direction: column;
-        width:55px;
+        width: 55px;
         margin: 4px;
     }
 
@@ -391,7 +391,7 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
         border: 0;
         background: var(--color-background-primary);
         cursor: pointer;
-        padding:9px 3px;
+        padding: 9px 3px;
     }
 
     .menu-toggle-btn:hover,
@@ -412,31 +412,28 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
         margin: 6px 0;
     }
 
+    /* Hamburger icon transforming into a cross when touched. Uncomment CSS below to activate it. */
     
+    /* .menu-toggle-btn.open span:nth-child(1) {
+        width: 0%;
+        left: 50%;
+        transition: 0s ease-in-out;
+    }
+        
+    .menu-toggle-btn span,
+    .menu-toggle-btn.open span:nth-child(2),
+    .menu-toggle-btn.open span:nth-child(3) {
+        transition: .25s ease-in-out;
+    }
 
-    /* Hamburger icon transforming into cross by touching. Uncomment CSS to activate it.*/
+    .menu-toggle-btn.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
 
-    
-        /* .menu-toggle-btn.open span:nth-child(1) {
-            width: 0%;
-            left: 50%;
-            transition: 0s ease-in-out;
-        }
-            
-        .menu-toggle-btn span,
-        .menu-toggle-btn.open span:nth-child(2),
-        .menu-toggle-btn.open span:nth-child(3) {
-            transition: .25s ease-in-out;
-        }
-
-        .menu-toggle-btn.open span:nth-child(2) {
-            transform: rotate(45deg);
-        }
-
-        .menu-toggle-btn.open span:nth-child(3) {
-            transform: rotate(-45deg);
-            margin-top: -12px;
-        }
+    .menu-toggle-btn.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-top: -12px;
+    }
     */
 
     /* -- MOBILE MENU -- */
@@ -449,8 +446,8 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
     .Versatile_Resp_Menu li a {
         padding: 10px 8px;
         font-size: 18px;
-        border-top:2px var(--border-color-light) var(--border-style-default);
-        margin:0;
+        border-top: 2px var(--border-color-light) var(--border-style-default);
+        margin: 0;
     }
 
     .Versatile_Resp_Menu li:last-child {
@@ -459,23 +456,22 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
 
     .Versatile_Resp_Menu .sub-menu {
         position: static;
-        padding:0;
+        padding: 0;
     }
 
     .Versatile_Resp_Menu > li > .sub-menu {
         padding: 0px;
         background-color: var(--color-background-light);
         flex-direction: column;
-        margin-top:0;
+        margin-top: 0;
     }
 
     .Versatile_Resp_Menu li .sub-menu li a {
-     
         padding: 10px 35px 10px 12px;
         background-color: var(--color-background-primary-dark);
-        font-size:17px;
-        max-width:unset;
-        margin:0;
+        font-size: 17px;
+        max-width: unset;
+        margin: 0;
     }
 
     .Versatile_Resp_Menu .sub-menu li:last-child {
@@ -483,39 +479,38 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
     }
 
     .Versatile_Resp_Menu ul a:before {
-        padding-right:8px;
+        padding-right: 8px;
     }
 
-
     .Versatile_Resp_Menu ul ul a:before {
-        border:0;
-        padding-right:15px;
-        content:var(--list_item_1);
-        top:2px;
+        border: 0;
+        padding-right: 15px;
+        content: var(--list_item_1);
+        top: 2px;
     }
 
     .Versatile_Resp_Menu > li > .sub-menu > li .sub-menu {
         position: relative;
-        left:0;
-        top:0;
-        margin-top:0px;
+        left: 0;
+        top: 0;
+        margin-top: 0px;
     }
 
     .Versatile_Resp_Menu li .sub-menu li .sub-menu li a {
-        padding-left:17px;
-        font-size:14px;
+        padding-left: 17px;
+        font-size: 14px;
         background-color: var(--color-background-accent);
     }
 
     .Versatile_Resp_Menu li .sub-menu li a:hover,
     .Versatile_Resp_Menu li .sub-menu li a:focus,
     .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:hover,
-    .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:focus  {
+    .Versatile_Resp_Menu li .sub-menu li .sub-menu li a:focus {
         background-color: var(--color-background-light);
-        color:var(--color-text-dark)
-     }
+        color: var(--color-text-dark);
+    }
 
-  /* Pijltjes */
+    /* Arrows */
   
     .Versatile_Resp_Menu > li a > .arrow,
     .Versatile_Resp_Menu .sub-menu li > a > .arrow {
@@ -526,7 +521,6 @@ ul[data-menu-style="megamenu"] li>.sub-menu>li .sub-menu li a:before {
     }
 
     .Versatile_Resp_Menu .sub-menu li > a > .arrow {
-        right:15px;
+        right: 15px;
     }
-
 }

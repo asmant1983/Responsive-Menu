@@ -1,71 +1,49 @@
 <!--
-
-Note: Use the contents of the menu.html file 
+Note: Use the contents of this menu.html file 
 for development and experimental purposes.
-
 -->
-
 <!DOCTYPE html>
-<html lang="nl">
-
+<html lang="en">
 <head>
-    
     <title>Universal Responsive Menu</title>
-
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link href="css/menu.css" rel="stylesheet" type="text/css" />
 
-    <!-- Note: Using jQuery will always load the JavaScript at the end, 
-    regardless of whether <script></script> is in the <head></head> or 
-    at the end of <body></body>. 
+    <!-- 
+    Note: Using the 'defer' attribute ensures the scripts are loaded 
+    without blocking the HTML rendering process. 
     -->
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
-    <script src="js/javascript.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="js/javascript.js" defer></script>
 </head>
 
 <body>
     <nav class="nav1" aria-label="Main navigation">
         <div class="navbar">
-
             <section class="menu-toggle">
-
                 <h3>Menu</h3>
-                <button id="menu-btn" class="menu-toggle-btn" aria-label="Menu openen/sluiten">
-
+                <button id="menu-btn" class="menu-toggle-btn" aria-label="Toggle menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-
                 </button>
-
             </section>
         </div>
 
         <!--
-
-        /*
         Enter the menu type between the quotation marks for the data-menu-style attribute:
         'horizontal' => Horizontal dropdown (Most commonly used)
         'megamenu'   => Megamenu (Common for e-commerce and large-scale websites)
         'vertical'   => Vertical flyout menu (Rarely used)
-        'accordion'  => Accordion menu (Rarely used. Except as part of a mobile website, opened with a hamburger icon)
-       
-        */
-
+        'accordion'  => Accordion menu (Rarely used, except as part of a mobile website)
         -->
-
         <ul id="respMenu" class="Versatile_Resp_Menu" data-menu-style="megamenu">
-
             <li><a href="#/" aria-current="page">Menu item 1</a></li>
             <li><a href="#/">Menu item 2</a>
                 <ul class="sub-menu">
                     <li><a href="#/">Submenu item 1</a></li>
                     <li><a href="#/">Submenu item 2</a></li>
-                      
                     <li><a href="#/">Submenu item 3</a></li>
                     <li><a href="#/">Submenu item 4</a>
                         <ul class="sub-menu">
@@ -75,7 +53,6 @@ for development and experimental purposes.
                             <li><a href="#/">Sub submenu item 4</a></li>
                             <!-- One main level and a maximum of two sublevels. Important note: More than three levels are unrecommended. -->
                         </ul>
-                    
                     </li>
                     <li><a href="#/">Submenu item 5</a></li>
                     <li><a href="#/">Submenu item 6</a></li>
@@ -90,7 +67,6 @@ for development and experimental purposes.
             <li><a href="#/">Menu item 4</a></li>
             <li><a href="#/">Menu item 5</a></li>
         </ul>
-
     </nav>
 </body>
 </html>

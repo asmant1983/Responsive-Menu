@@ -1,13 +1,13 @@
 (function($) {
     'use strict';
 
-    $.fn.responsiveMenu = function(opties) {
-        // --- 1. CONFIGURATIE ---
+    $.fn.responsiveMenu = function(options) {
+        // --- 1. CONFIGURATION ---
         const s = $.extend({
             resizeWidth: 799,
             speed: 400,
             accordionExpandAll: false
-        }, opties);
+        }, options);
 
         const $menu = $(this);
         const $toggleBtn = $('.menu-toggle');
@@ -17,9 +17,9 @@
         const isMega = menuType === 'megamenu';
         const isAccordion = menuType === 'accordion';
 
-        // --- 2. FUNCTIES ---
+        // --- 2. FUNCTIONS ---
 
-        // Submenu tonen/verbergen (Mobiel & Accordion)
+        // Show/hide submenu (Mobile & Accordion)
         const toggleItem = ($el, open) => {
             const $li = $el.parent();
             const $sub = $el.siblings('.sub-menu');
@@ -39,15 +39,15 @@
             }
         };
 
-        // Viewport status bijwerken
+        // Update viewport state
         const updateView = () => {
-            const mobiel = $(window).innerWidth() <= s.resizeWidth;
+            const isMobile = $(window).innerWidth() <= s.resizeWidth;
             
-            if (mobiel) {
+            if (isMobile) {
                 if ($menu.attr('data-menu-style')) {
                     $menu.removeAttr('data-menu-style').addClass('collapse').hide();
                     $toggleBtn.show();
-                    $btn.removeClass('open');
+                    $btn.removeClass('open').attr('aria-expanded', 'false');
                     $menu.find('.menu-active').removeClass('menu-active').find('> .sub-menu').hide();
                 }
             } else {
@@ -61,7 +61,7 @@
 
         // --- 3. EVENTS ---
 
-        // Klik-logica (Mobiel & Accordion)
+        // Click logic (Mobile & Accordion)
         $menu.on('click', 'li > a', function(e) {
             if ($menu.hasClass('collapse') || isAccordion) {
                 const $sub = $(this).siblings('.sub-menu');
@@ -72,7 +72,7 @@
             }
         });
 
-        // Hover-logica (Desktop: Dropdown, Vertical, Megamenu)
+        // Hover logic (Desktop: Dropdown, Vertical, Megamenu)
         $menu.on('mouseenter mouseleave', 'li', function(e) {
             if ($menu.hasClass('collapse') || isAccordion) return;
 
@@ -84,7 +84,7 @@
             $li.toggleClass('menu-active', isEnter);
 
             if ($sub.length) {
-                // Megamenu fix: Alleen het bovenste niveau krijgt JS-animatie
+                // Megamenu fix: Only the top level receives the JS animation
                 if (isMega && !isTop) return; 
 
                 if (isEnter) {
@@ -100,12 +100,19 @@
         $btn.on('click', function(e) {
             e.preventDefault();
             $menu.stop(true, true).slideToggle(s.speed);
-            $(this).toggleClass('open');
+            
+            const isOpen = $(this).toggleClass('open').hasClass('open');
+            $(this).attr('aria-expanded', isOpen); // Informs screen readers of the state
         });
 
-        $(window).on('resize', updateView);
+        // Debounced resize event to improve performance
+        let resizeTimer;
+        $(window).on('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(updateView, 150);
+        });
 
-        // --- 4. INIT ---
+        // --- 4. INITIALIZATION ---
         $menu.find('ul').addClass('sub-menu');
         $menu.find('li:has(ul) > a').append('<span class="arrow"></span>');
         updateView();
