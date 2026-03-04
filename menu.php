@@ -64,8 +64,8 @@ echo '
         */
 
         /*
-        $menu_options = get_field('menu_options', 'option');
-        echo '<ul id="respMenu" class="Versatile_Resp_Menu" data-menu-style="';
+                $menu_options = get_field('menu_options', 'option');
+                echo '<ul id="respMenu" class="Versatile_Resp_Menu" data-menu-style="';
 
                 $menu_type = [        
                 'horizontal',
@@ -74,13 +74,10 @@ echo '
                 'megamenu',
                 ];
 
-        foreach ($menu_type as $menu) {
-                    if ($menu_options === $menu) {
-                    echo esc_attr($menu);
-                    }
-                }
+                $menu_style = in_array($menu_options, $menu_type) ? $menu_options : 'horizontal';
 
-                $menu = in_array($menu_options, $menu_type) ? $menu_options : 'horizontal';
+                echo esc_attr($menu_style);
+
         */
                 
         echo '">';        
