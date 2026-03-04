@@ -99,7 +99,7 @@
         // Hamburger toggle
         $btn.on('click', function(e) {
             e.preventDefault();
-            $menu.slideToggle(s.speed);
+            $menu.stop(true, true).slideToggle(s.speed);
             $(this).toggleClass('open');
         });
 
